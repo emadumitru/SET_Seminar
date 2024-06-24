@@ -1,0 +1,19 @@
+\begin{table*}
+    \begin{tabular}{lcccc}
+    \toprule
+    Refactoring Type & Approach & BA (\%) & TN (\%) & TP (\%) \\
+    \midrule
+        Extract Method & ngram normal single & 85 & 74 & 97 \\
+    Extract Superclass & ratio PBS all & 73 & 70 & 75 \\
+    Inline Method & ngram PBS single & 92 & 84 & 100 \\
+    Move Attribute & count PBS single & 82 & 64 & 100 \\
+    Move Class & ngram PBS all & 87 & 90 & 83 \\
+    Move Method & ngram PBS all & 81 & 95 & 67 \\
+    Pull Up Method & count PBS all & 63 & 76 & 50 \\
+    Rename Package & count SMOTE all & 100 & 100 & 100 \\
+    \bottomrule
+    \end{tabular}
+    \caption{Table of best balanced accuracy (BA), true negative (TN), and true positive (TP) percentages for each refactoring type}
+    \label{tab:refactoring_best_accuracy}
+\end{table*}
+    

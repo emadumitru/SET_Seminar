@@ -1,0 +1,10 @@
+Position: 1, Approach: count, Type File: all, Type Split: PBS, TP: 50, TN: 76, BA: 63
+Position: 1, Approach: count, Type File: all, Type Split: SMOTE, TP: 50, TN: 43, BA: 47
+Position: 1, Approach: count, Type File: all, Type Split: normal, TP: 0, TN: 100, BA: 50 (all models predict only 1 label)
+Position: 2, Approach: countplus, Type File: all, Type Split: PBS, TP: 50, TN: 76, BA: 63
+Position: 2, Approach: countplus, Type File: all, Type Split: SMOTE, TP: 50, TN: 43, BA: 47
+Position: 2, Approach: countplus, Type File: all, Type Split: normal, TP: 0, TN: 100, BA: 50 (all models predict only 1 label)
+Position: 3, Approach: ngram, Type File: all, Type Split: PBS, TP: 0, TN: 100, BA: 50 (all models predict only 1 label)
+Position: 3, Approach: ngram, Type File: all, Type Split: normal, TP: 0, TN: 100, BA: 50 (all models predict only 1 label)
+Position: 4, Approach: ratio, Type File: all, Type Split: PBS, TP: 0, TN: 100, BA: 50 (all models predict only 1 label)
+Position: 4, Approach: ratio, Type File: all, Type Split: normal, TP: 0, TN: 100, BA: 50 (all models predict only 1 label)

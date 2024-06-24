@@ -1,0 +1,361 @@
+Refactoring Type,Source File,Model,Split,Pos Train,Neg Train,Accuracy,TN,TP,FN,FP,Model Params,Approach,Type Split,Type File,metric
+Extract Method,count_PBS_all,RandomForest,0.5,53,37,0.643,53,76,24,47,"[""{'bootstrap': True, 'max"", ""depth': None, 'min"", 'samples', ""leaf': 1, 'min"", 'samples', ""split': 5, 'n"", ""estimators': 50}""]",count,PBS,all,Accuracy
+Extract Method,count_PBS_all,RandomForest,0.5,53,37,0.643,53,76,24,47,"[""{'bootstrap': True, 'max"", ""depth': None, 'min"", 'samples', ""leaf': 1, 'min"", 'samples', ""split': 5, 'n"", ""estimators': 50}""]",count,PBS,all,TN
+Extract Method,count_PBS_all,LogisticRegression,0.2,85,37,0.517,8,95,5,92,"[""{'C': 0.01, 'max"", ""iter': 100, 'penalty': 'l2', 'solver': 'lbfgs'}""]",count,PBS,all,TP
+Extract Superclass,count_PBS_all,LogisticRegression,0.4,4,8,0.523,80,25,75,20,"[""{'C': 10, 'max"", ""iter': 100, 'penalty': 'l2', 'solver': 'lbfgs'}""]",count,PBS,all,Accuracy
+Extract Superclass,count_PBS_all,LogisticRegression,0.4,4,8,0.523,80,25,75,20,"[""{'C': 10, 'max"", ""iter': 100, 'penalty': 'l2', 'solver': 'lbfgs'}""]",count,PBS,all,TN
+Extract Superclass,count_PBS_all,RandomForest,0.4,4,8,0.511,77,25,75,23,"[""{'bootstrap': True, 'max"", ""depth': None, 'min"", 'samples', ""leaf': 1, 'min"", 'samples', ""split': 2, 'n"", ""estimators': 100}""]",count,PBS,all,TP
+Inline Method,count_PBS_all,RandomForest,0.3,11,22,0.738,88,60,40,12,"[""{'bootstrap': True, 'max"", ""depth': None, 'min"", 'samples', ""leaf': 1, 'min"", 'samples', ""split': 2, 'n"", ""estimators': 50}""]",count,PBS,all,Accuracy
+Inline Method,count_PBS_all,RandomForest,0.3,11,22,0.738,88,60,40,12,"[""{'bootstrap': True, 'max"", ""depth': None, 'min"", 'samples', ""leaf': 1, 'min"", 'samples', ""split': 2, 'n"", ""estimators': 50}""]",count,PBS,all,TN
+Inline Method,count_PBS_all,SVM,0.5,8,16,0.699,77,62,38,23,"[""{'C': 0.1, 'gamma': 'scale', 'kernel': 'linear'}""]",count,PBS,all,TP
+Move Attribute,count_PBS_all,SVM,0.3,8,16,0.734,97,50,50,3,"[""{'C': 100, 'gamma': 'scale', 'kernel': 'rbf'}""]",count,PBS,all,Accuracy
+Move Attribute,count_PBS_all,SVM,0.4,7,14,0.494,99,0,100,1,"[""{'C': 100, 'gamma': 'scale', 'kernel': 'poly'}""]",count,PBS,all,TN
+Move Attribute,count_PBS_all,RandomForest,0.3,8,16,0.636,77,50,50,23,"[""{'bootstrap': True, 'max"", ""depth': None, 'min"", 'samples', ""leaf': 1, 'min"", 'samples', ""split': 2, 'n"", ""estimators': 50}""]",count,PBS,all,TP
+Move Class,count_PBS_all,RandomForest,0.2,21,42,0.745,82,67,33,18,"[""{'bootstrap': True, 'max"", ""depth': None, 'min"", 'samples', ""leaf': 1, 'min"", 'samples', ""split': 5, 'n"", ""estimators': 200}""]",count,PBS,all,Accuracy
+Move Class,count_PBS_all,SVM,0.2,21,42,0.622,91,33,67,9,"[""{'C': 0.1, 'gamma': 'scale', 'kernel': 'linear'}""]",count,PBS,all,TN
+Move Class,count_PBS_all,RandomForest,0.2,21,42,0.745,82,67,33,18,"[""{'bootstrap': True, 'max"", ""depth': None, 'min"", 'samples', ""leaf': 1, 'min"", 'samples', ""split': 5, 'n"", ""estimators': 200}""]",count,PBS,all,TP
+Move Method,count_PBS_all,RandomForest,0.3,7,14,0.786,91,67,33,9,"[""{'bootstrap': True, 'max"", ""depth': None, 'min"", 'samples', ""leaf': 1, 'min"", 'samples', ""split': 2, 'n"", ""estimators': 300}""]",count,PBS,all,Accuracy
+Move Method,count_PBS_all,SVM,0.5,5,10,0.488,98,0,100,2,"[""{'C': 0.1, 'gamma': 'scale', 'kernel': 'poly'}""]",count,PBS,all,TN
+Move Method,count_PBS_all,SVM,0.4,6,12,0.647,54,75,25,46,"[""{'C': 0.1, 'gamma': 'auto', 'kernel': 'poly'}""]",count,PBS,all,TP
+Pull Up Method,count_PBS_all,RandomForest,0.2,6,12,0.63,76,50,50,24,"[""{'bootstrap': True, 'max"", ""depth': None, 'min"", 'samples', ""leaf': 2, 'min"", 'samples', ""split': 10, 'n"", ""estimators': 200}""]",count,PBS,all,Accuracy
+Pull Up Method,count_PBS_all,RandomForest,0.4,4,8,0.5,100,0,100,0,"[""{'bootstrap': True, 'max"", ""depth': None, 'min"", 'samples', ""leaf': 1, 'min"", 'samples', ""split': 10, 'n"", ""estimators': 50}""]",count,PBS,all,TN
+Pull Up Method,count_PBS_all,RandomForest,0.2,6,12,0.63,76,50,50,24,"[""{'bootstrap': True, 'max"", ""depth': None, 'min"", 'samples', ""leaf': 2, 'min"", 'samples', ""split': 10, 'n"", ""estimators': 200}""]",count,PBS,all,TP
+Rename Package,count_PBS_all,LogisticRegression,0.2,5,10,0.967,93,100,0,7,"[""{'C': 0.01, 'max"", ""iter': 100, 'penalty': 'l2', 'solver': 'lbfgs'}""]",count,PBS,all,Accuracy
+Rename Package,count_PBS_all,RandomForest,0.2,5,10,0.964,93,100,0,7,"[""{'bootstrap': True, 'max"", ""depth': None, 'min"", 'samples', ""leaf': 1, 'min"", 'samples', ""split': 2, 'n"", ""estimators': 50}""]",count,PBS,all,TN
+Rename Package,count_PBS_all,RandomForest,0.2,5,10,0.964,93,100,0,7,"[""{'bootstrap': True, 'max"", ""depth': None, 'min"", 'samples', ""leaf': 1, 'min"", 'samples', ""split': 2, 'n"", ""estimators': 50}""]",count,PBS,all,TP
+Extract Method,count_PBS_single,RandomForest,0.5,49,31,0.631,55,71,29,45,"[""{'bootstrap': False, 'max"", ""depth': None, 'min"", 'samples', ""leaf': 1, 'min"", 'samples', ""split': 2, 'n"", ""estimators': 200}""]",count,PBS,single,Accuracy
+Extract Method,count_PBS_single,RandomForest,0.5,49,31,0.631,55,71,29,45,"[""{'bootstrap': False, 'max"", ""depth': None, 'min"", 'samples', ""leaf': 1, 'min"", 'samples', ""split': 2, 'n"", ""estimators': 200}""]",count,PBS,single,TN
+Extract Method,count_PBS_single,LogisticRegression,0.3,68,31,0.595,29,90,10,71,"[""{'C': 0.1, 'max"", ""iter': 100, 'penalty': 'l2', 'solver': 'lbfgs'}""]",count,PBS,single,TP
+Inline Method,count_PBS_single,RandomForest,0.4,8,16,0.855,88,83,17,12,"[""{'bootstrap': True, 'max"", ""depth': None, 'min"", 'samples', ""leaf': 1, 'min"", 'samples', ""split': 2, 'n"", ""estimators': 200}""]",count,PBS,single,Accuracy
+Inline Method,count_PBS_single,RandomForest,0.5,7,14,0.665,90,43,57,10,"[""{'bootstrap': False, 'max"", ""depth': None, 'min"", 'samples', ""leaf': 1, 'min"", 'samples', ""split': 5, 'n"", ""estimators': 50}""]",count,PBS,single,TN
+Inline Method,count_PBS_single,RandomForest,0.4,8,16,0.855,88,83,17,12,"[""{'bootstrap': True, 'max"", ""depth': None, 'min"", 'samples', ""leaf': 1, 'min"", 'samples', ""split': 2, 'n"", ""estimators': 200}""]",count,PBS,single,TP
+Move Attribute,count_PBS_single,SVM,0.2,5,10,0.818,64,100,0,36,"[""{'C': 100, 'gamma': 'scale', 'kernel': 'sigmoid'}""]",count,PBS,single,Accuracy
+Move Attribute,count_PBS_single,RandomForest,0.2,5,10,0.701,90,50,50,10,"[""{'bootstrap': False, 'max"", ""depth': None, 'min"", 'samples', ""leaf': 2, 'min"", 'samples', ""split': 10, 'n"", ""estimators': 50}""]",count,PBS,single,TN
+Move Attribute,count_PBS_single,SVM,0.2,5,10,0.818,64,100,0,36,"[""{'C': 100, 'gamma': 'scale', 'kernel': 'sigmoid'}""]",count,PBS,single,TP
+Move Class,count_PBS_single,RandomForest,0.2,14,28,0.827,90,75,25,10,"[""{'bootstrap': True, 'max"", ""depth': None, 'min"", 'samples', ""leaf': 1, 'min"", 'samples', ""split': 2, 'n"", ""estimators': 50}""]",count,PBS,single,Accuracy
+Move Class,count_PBS_single,RandomForest,0.5,9,18,0.579,94,22,78,6,"[""{'bootstrap': True, 'max"", ""depth': None, 'min"", 'samples', ""leaf': 1, 'min"", 'samples', ""split': 2, 'n"", ""estimators': 50}""]",count,PBS,single,TN
+Move Class,count_PBS_single,RandomForest,0.2,14,28,0.827,90,75,25,10,"[""{'bootstrap': True, 'max"", ""depth': None, 'min"", 'samples', ""leaf': 1, 'min"", 'samples', ""split': 2, 'n"", ""estimators': 50}""]",count,PBS,single,TP
+Extract Method,count_SMOTE_all,RandomForest,0.2,85,85,0.709,60,82,18,40,"[""{'max"", ""depth': 10, 'min"", 'samples', ""leaf': 2, 'min"", 'samples', ""split': 10, 'n"", ""estimators': 200}""]",count,SMOTE,all,Accuracy
+Extract Method,count_SMOTE_all,SVM,0.4,64,64,0.578,67,49,51,33,"[""{'C': 0.1, 'kernel': 'linear'}""]",count,SMOTE,all,TN
+Extract Method,count_SMOTE_all,SVM,0.3,75,75,0.674,35,100,0,65,"[""{'C': 10, 'kernel': 'rbf'}""]",count,SMOTE,all,TP
+Extract Superclass,count_SMOTE_all,SVM,0.2,139,139,0.65,80,50,50,20,"[""{'C': 10, 'kernel': 'rbf'}""]",count,SMOTE,all,Accuracy
+Extract Superclass,count_SMOTE_all,RandomForest,0.2,139,139,0.457,91,0,100,9,"[""{'max"", ""depth': None, 'min"", 'samples', ""leaf': 1, 'min"", 'samples', ""split': 2, 'n"", ""estimators': 200}""]",count,SMOTE,all,TN
+Extract Superclass,count_SMOTE_all,SVM,0.2,139,139,0.65,80,50,50,20,"[""{'C': 10, 'kernel': 'rbf'}""]",count,SMOTE,all,TP
+Inline Method,count_SMOTE_all,LogisticRegression,0.2,132,132,0.775,88,67,33,12,"[""{'C': 0.1, 'max"", ""iter': 100}""]",count,SMOTE,all,Accuracy
+Inline Method,count_SMOTE_all,RandomForest,0.4,99,99,0.713,93,50,50,7,"[""{'max"", ""depth': None, 'min"", 'samples', ""leaf': 1, 'min"", 'samples', ""split': 2, 'n"", ""estimators': 200}""]",count,SMOTE,all,TN
+Inline Method,count_SMOTE_all,SVM,0.2,132,132,0.76,85,67,33,15,"[""{'C': 0.1, 'kernel': 'linear'}""]",count,SMOTE,all,TP
+Move Attribute,count_SMOTE_all,RandomForest,0.4,102,102,0.69,78,60,40,22,"[""{'max"", ""depth': 10, 'min"", 'samples', ""leaf': 1, 'min"", 'samples', ""split': 10, 'n"", ""estimators': 100}""]",count,SMOTE,all,Accuracy
+Move Attribute,count_SMOTE_all,SVM,0.5,85,85,0.507,85,17,83,15,"[""{'C': 0.1, 'kernel': 'linear'}""]",count,SMOTE,all,TN
+Move Attribute,count_SMOTE_all,RandomForest,0.4,102,102,0.69,78,60,40,22,"[""{'max"", ""depth': 10, 'min"", 'samples', ""leaf': 1, 'min"", 'samples', ""split': 10, 'n"", ""estimators': 100}""]",count,SMOTE,all,TP
+Move Class,count_SMOTE_all,LogisticRegression,0.5,78,78,0.679,71,64,36,29,"[""{'C': 0.1, 'max"", ""iter': 100}""]",count,SMOTE,all,Accuracy
+Move Class,count_SMOTE_all,SVM,0.2,123,123,0.653,91,40,60,9,"[""{'C': 10, 'kernel': 'rbf'}""]",count,SMOTE,all,TN
+Move Class,count_SMOTE_all,SVM,0.5,78,78,0.646,65,64,36,35,"[""{'C': 0.1, 'kernel': 'linear'}""]",count,SMOTE,all,TP
+Move Method,count_SMOTE_all,RandomForest,0.2,137,137,0.693,89,50,50,11,"[""{'max"", ""depth': None, 'min"", 'samples', ""leaf': 1, 'min"", 'samples', ""split': 2, 'n"", ""estimators': 100}""]",count,SMOTE,all,Accuracy
+Move Method,count_SMOTE_all,SVM,0.4,103,103,0.464,93,0,100,7,"[""{'C': 10, 'kernel': 'rbf'}""]",count,SMOTE,all,TN
+Move Method,count_SMOTE_all,RandomForest,0.2,137,137,0.693,89,50,50,11,"[""{'max"", ""depth': None, 'min"", 'samples', ""leaf': 1, 'min"", 'samples', ""split': 2, 'n"", ""estimators': 100}""]",count,SMOTE,all,TP
+Pull Up Method,count_SMOTE_all,SVM,0.3,121,121,0.467,43,50,50,57,"[""{'C': 0.1, 'kernel': 'linear'}""]",count,SMOTE,all,Accuracy
+Pull Up Method,count_SMOTE_all,RandomForest,0.2,139,139,0.443,89,0,100,11,"[""{'max"", ""depth': None, 'min"", 'samples', ""leaf': 1, 'min"", 'samples', ""split': 5, 'n"", ""estimators': 100}""]",count,SMOTE,all,TN
+Pull Up Method,count_SMOTE_all,SVM,0.3,121,121,0.467,43,50,50,57,"[""{'C': 0.1, 'kernel': 'linear'}""]",count,SMOTE,all,TP
+Rename Package,count_SMOTE_all,RandomForest,0.2,139,139,1.0,100,100,0,0,"[""{'max"", ""depth': None, 'min"", 'samples', ""leaf': 1, 'min"", 'samples', ""split': 2, 'n"", ""estimators': 100}""]",count,SMOTE,all,Accuracy
+Rename Package,count_SMOTE_all,RandomForest,0.2,139,139,1.0,100,100,0,0,"[""{'max"", ""depth': None, 'min"", 'samples', ""leaf': 1, 'min"", 'samples', ""split': 2, 'n"", ""estimators': 100}""]",count,SMOTE,all,TN
+Rename Package,count_SMOTE_all,RandomForest,0.2,139,139,1.0,100,100,0,0,"[""{'max"", ""depth': None, 'min"", 'samples', ""leaf': 1, 'min"", 'samples', ""split': 2, 'n"", ""estimators': 100}""]",count,SMOTE,all,TP
+Extract Method,count_SMOTE_single,RandomForest,0.3,69,69,0.809,79,83,17,21,"[""{'max"", ""depth': None, 'min"", 'samples', ""leaf': 1, 'min"", 'samples', ""split': 2, 'n"", ""estimators': 200}""]",count,SMOTE,single,Accuracy
+Extract Method,count_SMOTE_single,RandomForest,0.3,69,69,0.809,79,83,17,21,"[""{'max"", ""depth': None, 'min"", 'samples', ""leaf': 1, 'min"", 'samples', ""split': 2, 'n"", ""estimators': 200}""]",count,SMOTE,single,TN
+Extract Method,count_SMOTE_single,SVM,0.3,69,69,0.623,32,93,7,68,"[""{'C': 0.1, 'kernel': 'linear'}""]",count,SMOTE,single,TP
+Inline Method,count_SMOTE_single,RandomForest,0.5,73,73,0.795,88,71,29,12,"[""{'max"", ""depth': None, 'min"", 'samples', ""leaf': 1, 'min"", 'samples', ""split': 2, 'n"", ""estimators': 200}""]",count,SMOTE,single,Accuracy
+Inline Method,count_SMOTE_single,RandomForest,0.4,88,88,0.724,95,50,50,5,"[""{'max"", ""depth': None, 'min"", 'samples', ""leaf': 2, 'min"", 'samples', ""split': 5, 'n"", ""estimators': 100}""]",count,SMOTE,single,TN
+Inline Method,count_SMOTE_single,RandomForest,0.5,73,73,0.795,88,71,29,12,"[""{'max"", ""depth': None, 'min"", 'samples', ""leaf': 1, 'min"", 'samples', ""split': 2, 'n"", ""estimators': 200}""]",count,SMOTE,single,TP
+Move Attribute,count_SMOTE_single,RandomForest,0.2,122,122,0.468,94,0,100,6,"[""{'max"", ""depth': 10, 'min"", 'samples', ""leaf': 1, 'min"", 'samples', ""split': 2, 'n"", ""estimators': 100}""]",count,SMOTE,single,Accuracy
+Move Attribute,count_SMOTE_single,RandomForest,0.2,122,122,0.468,94,0,100,6,"[""{'max"", ""depth': 10, 'min"", 'samples', ""leaf': 1, 'min"", 'samples', ""split': 2, 'n"", ""estimators': 100}""]",count,SMOTE,single,TN
+Move Attribute,count_SMOTE_single,RandomForest,0.2,122,122,0.468,94,0,100,6,"[""{'max"", ""depth': 10, 'min"", 'samples', ""leaf': 1, 'min"", 'samples', ""split': 2, 'n"", ""estimators': 100}""]",count,SMOTE,single,TP
+Move Class,count_SMOTE_single,SVM,0.2,114,114,0.804,86,75,25,14,"[""{'C': 1, 'kernel': 'linear'}""]",count,SMOTE,single,Accuracy
+Move Class,count_SMOTE_single,SVM,0.4,85,85,0.733,89,57,43,11,"[""{'C': 0.1, 'kernel': 'linear'}""]",count,SMOTE,single,TN
+Move Class,count_SMOTE_single,SVM,0.2,114,114,0.804,86,75,25,14,"[""{'C': 1, 'kernel': 'linear'}""]",count,SMOTE,single,TP
+Extract Method,count_normal_all,RandomForest,0.2,85,60,0.744,53,95,5,47,"[""{'max"", ""depth': 10, 'min"", 'samples', ""leaf': 1, 'min"", 'samples', ""split': 5, 'n"", ""estimators': 100}""]",count,normal,all,Accuracy
+Extract Method,count_normal_all,RandomForest,0.2,85,60,0.744,53,95,5,47,"[""{'max"", ""depth': 10, 'min"", 'samples', ""leaf': 1, 'min"", 'samples', ""split': 5, 'n"", ""estimators': 100}""]",count,normal,all,TN
+Extract Method,count_normal_all,SVM,0.4,64,45,0.5,0,100,0,100,"[""{'C': 0.1, 'kernel': 'rbf'}""]",count,normal,all,TP
+Extract Superclass,count_normal_all,RandomForest,0.2,6,139,0.5,100,0,100,0,"[""{'max"", ""depth': None, 'min"", 'samples', ""leaf': 1, 'min"", 'samples', ""split': 2, 'n"", ""estimators': 100}""]",count,normal,all,Accuracy
+Extract Superclass,count_normal_all,RandomForest,0.2,6,139,0.5,100,0,100,0,"[""{'max"", ""depth': None, 'min"", 'samples', ""leaf': 1, 'min"", 'samples', ""split': 2, 'n"", ""estimators': 100}""]",count,normal,all,TN
+Extract Superclass,count_normal_all,RandomForest,0.2,6,139,0.5,100,0,100,0,"[""{'max"", ""depth': None, 'min"", 'samples', ""leaf': 1, 'min"", 'samples', ""split': 2, 'n"", ""estimators': 100}""]",count,normal,all,TP
+Inline Method,count_normal_all,LogisticRegression,0.2,13,132,0.652,97,33,67,3,"[""{'C': 0.1, 'max"", ""iter': 100}""]",count,normal,all,Accuracy
+Inline Method,count_normal_all,RandomForest,0.2,13,132,0.5,100,0,100,0,"[""{'max"", ""depth': None, 'min"", 'samples', ""leaf': 2, 'min"", 'samples', ""split': 10, 'n"", ""estimators': 100}""]",count,normal,all,TN
+Inline Method,count_normal_all,LogisticRegression,0.2,13,132,0.652,97,33,67,3,"[""{'C': 0.1, 'max"", ""iter': 100}""]",count,normal,all,TP
+Move Attribute,count_normal_all,LogisticRegression,0.3,8,119,0.615,98,25,75,2,"[""{'C': 0.1, 'max"", ""iter': 100}""]",count,normal,all,Accuracy
+Move Attribute,count_normal_all,RandomForest,0.2,10,135,0.5,100,0,100,0,"[""{'max"", ""depth': None, 'min"", 'samples', ""leaf': 2, 'min"", 'samples', ""split': 2, 'n"", ""estimators': 100}""]",count,normal,all,TN
+Move Attribute,count_normal_all,LogisticRegression,0.3,8,119,0.615,98,25,75,2,"[""{'C': 0.1, 'max"", ""iter': 100}""]",count,normal,all,TP
+Move Class,count_normal_all,LogisticRegression,0.5,13,78,0.63,97,29,71,3,"[""{'C': 0.1, 'max"", ""iter': 100}""]",count,normal,all,Accuracy
+Move Class,count_normal_all,RandomForest,0.4,16,93,0.5,100,0,100,0,"[""{'max"", ""depth': None, 'min"", 'samples', ""leaf': 4, 'min"", 'samples', ""split': 2, 'n"", ""estimators': 100}""]",count,normal,all,TN
+Move Class,count_normal_all,LogisticRegression,0.5,13,78,0.63,97,29,71,3,"[""{'C': 0.1, 'max"", ""iter': 100}""]",count,normal,all,TP
+Move Method,count_normal_all,RandomForest,0.3,7,120,0.638,94,33,67,6,"[""{'max"", ""depth': None, 'min"", 'samples', ""leaf': 1, 'min"", 'samples', ""split': 2, 'n"", ""estimators': 100}""]",count,normal,all,Accuracy
+Move Method,count_normal_all,RandomForest,0.2,8,137,0.5,100,0,100,0,"[""{'max"", ""depth': None, 'min"", 'samples', ""leaf': 4, 'min"", 'samples', ""split': 2, 'n"", ""estimators': 100}""]",count,normal,all,TN
+Move Method,count_normal_all,RandomForest,0.3,7,120,0.638,94,33,67,6,"[""{'max"", ""depth': None, 'min"", 'samples', ""leaf': 1, 'min"", 'samples', ""split': 2, 'n"", ""estimators': 100}""]",count,normal,all,TP
+Pull Up Method,count_normal_all,RandomForest,0.2,6,139,0.5,100,0,100,0,"[""{'max"", ""depth': None, 'min"", 'samples', ""leaf': 1, 'min"", 'samples', ""split': 10, 'n"", ""estimators': 100}""]",count,normal,all,Accuracy
+Pull Up Method,count_normal_all,RandomForest,0.2,6,139,0.5,100,0,100,0,"[""{'max"", ""depth': None, 'min"", 'samples', ""leaf': 1, 'min"", 'samples', ""split': 10, 'n"", ""estimators': 100}""]",count,normal,all,TN
+Pull Up Method,count_normal_all,RandomForest,0.2,6,139,0.5,100,0,100,0,"[""{'max"", ""depth': None, 'min"", 'samples', ""leaf': 1, 'min"", 'samples', ""split': 10, 'n"", ""estimators': 100}""]",count,normal,all,TP
+Rename Package,count_normal_all,RandomForest,0.2,6,139,1.0,100,100,0,0,"[""{'max"", ""depth': None, 'min"", 'samples', ""leaf': 1, 'min"", 'samples', ""split': 2, 'n"", ""estimators': 100}""]",count,normal,all,Accuracy
+Rename Package,count_normal_all,RandomForest,0.2,6,139,1.0,100,100,0,0,"[""{'max"", ""depth': None, 'min"", 'samples', ""leaf': 1, 'min"", 'samples', ""split': 2, 'n"", ""estimators': 100}""]",count,normal,all,TN
+Rename Package,count_normal_all,RandomForest,0.2,6,139,1.0,100,100,0,0,"[""{'max"", ""depth': None, 'min"", 'samples', ""leaf': 1, 'min"", 'samples', ""split': 2, 'n"", ""estimators': 100}""]",count,normal,all,TP
+Extract Method,count_normal_single,RandomForest,0.2,78,50,0.808,67,95,5,33,"[""{'bootstrap': True, 'max"", ""depth': None, 'min"", 'samples', ""leaf': 4, 'min"", 'samples', ""split': 10, 'n"", ""estimators': 200}""]",count,normal,single,Accuracy
+Extract Method,count_normal_single,SVM,0.3,69,43,0.721,68,76,24,32,"[""{'C': 0.1, 'gamma': 'auto', 'kernel': 'poly'}""]",count,normal,single,TN
+Extract Method,count_normal_single,RandomForest,0.2,78,50,0.808,67,95,5,33,"[""{'bootstrap': True, 'max"", ""depth': None, 'min"", 'samples', ""leaf': 4, 'min"", 'samples', ""split': 10, 'n"", ""estimators': 200}""]",count,normal,single,TP
+Inline Method,count_normal_single,SVM,0.5,7,73,0.887,92,86,14,8,"[""{'C': 0.1, 'gamma': 'auto', 'kernel': 'poly'}""]",count,normal,single,Accuracy
+Inline Method,count_normal_single,RandomForest,0.2,11,117,0.5,100,0,100,0,"[""{'bootstrap': True, 'max"", ""depth': None, 'min"", 'samples', ""leaf': 1, 'min"", 'samples', ""split': 2, 'n"", ""estimators': 50}""]",count,normal,single,TN
+Inline Method,count_normal_single,SVM,0.5,7,73,0.887,92,86,14,8,"[""{'C': 0.1, 'gamma': 'auto', 'kernel': 'poly'}""]",count,normal,single,TP
+Move Attribute,count_normal_single,SVM,0.4,4,92,0.617,90,33,67,10,"[""{'C': 0.1, 'gamma': 'auto', 'kernel': 'poly'}""]",count,normal,single,Accuracy
+Move Attribute,count_normal_single,RandomForest,0.2,6,122,0.5,100,0,100,0,"[""{'bootstrap': True, 'max"", ""depth': None, 'min"", 'samples', ""leaf': 1, 'min"", 'samples', ""split': 2, 'n"", ""estimators': 50}""]",count,normal,single,TN
+Move Attribute,count_normal_single,SVM,0.4,4,92,0.617,90,33,67,10,"[""{'C': 0.1, 'gamma': 'auto', 'kernel': 'poly'}""]",count,normal,single,TP
+Move Class,count_normal_single,LogisticRegression,0.2,14,114,0.607,96,25,75,4,"[""{'C': 0.01, 'max"", ""iter': 100, 'penalty': 'l2', 'solver': 'lbfgs'}""]",count,normal,single,Accuracy
+Move Class,count_normal_single,SVM,0.2,14,114,0.5,100,0,100,0,"[""{'C': 100, 'gamma': 'scale', 'kernel': 'rbf'}""]",count,normal,single,TN
+Move Class,count_normal_single,SVM,0.3,13,99,0.572,74,40,60,26,"[""{'C': 0.1, 'gamma': 'auto', 'kernel': 'poly'}""]",count,normal,single,TP
+Extract Method,countplus_PBS_all,RandomForest,0.5,53,37,0.643,53,76,24,47,"[""{'bootstrap': True, 'max"", ""depth': None, 'min"", 'samples', ""leaf': 1, 'min"", 'samples', ""split': 5, 'n"", ""estimators': 50}""]",countplus,PBS,all,Accuracy
+Extract Method,countplus_PBS_all,RandomForest,0.5,53,37,0.643,53,76,24,47,"[""{'bootstrap': True, 'max"", ""depth': None, 'min"", 'samples', ""leaf': 1, 'min"", 'samples', ""split': 5, 'n"", ""estimators': 50}""]",countplus,PBS,all,TN
+Extract Method,countplus_PBS_all,LogisticRegression,0.2,85,37,0.517,8,95,5,92,"[""{'C': 0.01, 'max"", ""iter': 100, 'penalty': 'l2', 'solver': 'lbfgs'}""]",countplus,PBS,all,TP
+Extract Superclass,countplus_PBS_all,LogisticRegression,0.4,4,8,0.523,80,25,75,20,"[""{'C': 10, 'max"", ""iter': 100, 'penalty': 'l2', 'solver': 'lbfgs'}""]",countplus,PBS,all,Accuracy
+Extract Superclass,countplus_PBS_all,LogisticRegression,0.4,4,8,0.523,80,25,75,20,"[""{'C': 10, 'max"", ""iter': 100, 'penalty': 'l2', 'solver': 'lbfgs'}""]",countplus,PBS,all,TN
+Extract Superclass,countplus_PBS_all,RandomForest,0.4,4,8,0.511,77,25,75,23,"[""{'bootstrap': True, 'max"", ""depth': None, 'min"", 'samples', ""leaf': 1, 'min"", 'samples', ""split': 2, 'n"", ""estimators': 100}""]",countplus,PBS,all,TP
+Inline Method,countplus_PBS_all,RandomForest,0.3,11,22,0.738,88,60,40,12,"[""{'bootstrap': True, 'max"", ""depth': None, 'min"", 'samples', ""leaf': 1, 'min"", 'samples', ""split': 2, 'n"", ""estimators': 50}""]",countplus,PBS,all,Accuracy
+Inline Method,countplus_PBS_all,RandomForest,0.3,11,22,0.738,88,60,40,12,"[""{'bootstrap': True, 'max"", ""depth': None, 'min"", 'samples', ""leaf': 1, 'min"", 'samples', ""split': 2, 'n"", ""estimators': 50}""]",countplus,PBS,all,TN
+Inline Method,countplus_PBS_all,SVM,0.5,8,16,0.699,77,62,38,23,"[""{'C': 0.1, 'gamma': 'scale', 'kernel': 'linear'}""]",countplus,PBS,all,TP
+Move Attribute,countplus_PBS_all,SVM,0.3,8,16,0.734,97,50,50,3,"[""{'C': 100, 'gamma': 'scale', 'kernel': 'rbf'}""]",countplus,PBS,all,Accuracy
+Move Attribute,countplus_PBS_all,SVM,0.4,7,14,0.494,99,0,100,1,"[""{'C': 100, 'gamma': 'scale', 'kernel': 'poly'}""]",countplus,PBS,all,TN
+Move Attribute,countplus_PBS_all,RandomForest,0.3,8,16,0.636,77,50,50,23,"[""{'bootstrap': True, 'max"", ""depth': None, 'min"", 'samples', ""leaf': 1, 'min"", 'samples', ""split': 2, 'n"", ""estimators': 50}""]",countplus,PBS,all,TP
+Move Class,countplus_PBS_all,RandomForest,0.2,21,42,0.745,82,67,33,18,"[""{'bootstrap': True, 'max"", ""depth': None, 'min"", 'samples', ""leaf': 1, 'min"", 'samples', ""split': 5, 'n"", ""estimators': 200}""]",countplus,PBS,all,Accuracy
+Move Class,countplus_PBS_all,SVM,0.2,21,42,0.622,91,33,67,9,"[""{'C': 0.1, 'gamma': 'scale', 'kernel': 'linear'}""]",countplus,PBS,all,TN
+Move Class,countplus_PBS_all,RandomForest,0.2,21,42,0.745,82,67,33,18,"[""{'bootstrap': True, 'max"", ""depth': None, 'min"", 'samples', ""leaf': 1, 'min"", 'samples', ""split': 5, 'n"", ""estimators': 200}""]",countplus,PBS,all,TP
+Move Method,countplus_PBS_all,RandomForest,0.3,7,14,0.786,91,67,33,9,"[""{'bootstrap': True, 'max"", ""depth': None, 'min"", 'samples', ""leaf': 1, 'min"", 'samples', ""split': 2, 'n"", ""estimators': 300}""]",countplus,PBS,all,Accuracy
+Move Method,countplus_PBS_all,SVM,0.5,5,10,0.488,98,0,100,2,"[""{'C': 0.1, 'gamma': 'scale', 'kernel': 'poly'}""]",countplus,PBS,all,TN
+Move Method,countplus_PBS_all,SVM,0.4,6,12,0.647,54,75,25,46,"[""{'C': 0.1, 'gamma': 'auto', 'kernel': 'poly'}""]",countplus,PBS,all,TP
+Pull Up Method,countplus_PBS_all,RandomForest,0.2,6,12,0.63,76,50,50,24,"[""{'bootstrap': True, 'max"", ""depth': None, 'min"", 'samples', ""leaf': 2, 'min"", 'samples', ""split': 10, 'n"", ""estimators': 200}""]",countplus,PBS,all,Accuracy
+Pull Up Method,countplus_PBS_all,RandomForest,0.4,4,8,0.5,100,0,100,0,"[""{'bootstrap': True, 'max"", ""depth': None, 'min"", 'samples', ""leaf': 1, 'min"", 'samples', ""split': 10, 'n"", ""estimators': 50}""]",countplus,PBS,all,TN
+Pull Up Method,countplus_PBS_all,RandomForest,0.2,6,12,0.63,76,50,50,24,"[""{'bootstrap': True, 'max"", ""depth': None, 'min"", 'samples', ""leaf': 2, 'min"", 'samples', ""split': 10, 'n"", ""estimators': 200}""]",countplus,PBS,all,TP
+Rename Package,countplus_PBS_all,LogisticRegression,0.2,5,10,0.967,93,100,0,7,"[""{'C': 0.01, 'max"", ""iter': 100, 'penalty': 'l2', 'solver': 'lbfgs'}""]",countplus,PBS,all,Accuracy
+Rename Package,countplus_PBS_all,RandomForest,0.2,5,10,0.964,93,100,0,7,"[""{'bootstrap': True, 'max"", ""depth': None, 'min"", 'samples', ""leaf': 1, 'min"", 'samples', ""split': 2, 'n"", ""estimators': 50}""]",countplus,PBS,all,TN
+Rename Package,countplus_PBS_all,RandomForest,0.2,5,10,0.964,93,100,0,7,"[""{'bootstrap': True, 'max"", ""depth': None, 'min"", 'samples', ""leaf': 1, 'min"", 'samples', ""split': 2, 'n"", ""estimators': 50}""]",countplus,PBS,all,TP
+Extract Method,countplus_PBS_single,RandomForest,0.5,49,31,0.631,55,71,29,45,"[""{'bootstrap': False, 'max"", ""depth': None, 'min"", 'samples', ""leaf': 1, 'min"", 'samples', ""split': 2, 'n"", ""estimators': 200}""]",countplus,PBS,single,Accuracy
+Extract Method,countplus_PBS_single,RandomForest,0.5,49,31,0.631,55,71,29,45,"[""{'bootstrap': False, 'max"", ""depth': None, 'min"", 'samples', ""leaf': 1, 'min"", 'samples', ""split': 2, 'n"", ""estimators': 200}""]",countplus,PBS,single,TN
+Extract Method,countplus_PBS_single,LogisticRegression,0.3,68,31,0.595,29,90,10,71,"[""{'C': 0.1, 'max"", ""iter': 100, 'penalty': 'l2', 'solver': 'lbfgs'}""]",countplus,PBS,single,TP
+Inline Method,countplus_PBS_single,RandomForest,0.4,8,16,0.855,88,83,17,12,"[""{'bootstrap': True, 'max"", ""depth': None, 'min"", 'samples', ""leaf': 1, 'min"", 'samples', ""split': 2, 'n"", ""estimators': 200}""]",countplus,PBS,single,Accuracy
+Inline Method,countplus_PBS_single,RandomForest,0.5,7,14,0.665,90,43,57,10,"[""{'bootstrap': False, 'max"", ""depth': None, 'min"", 'samples', ""leaf': 1, 'min"", 'samples', ""split': 5, 'n"", ""estimators': 50}""]",countplus,PBS,single,TN
+Inline Method,countplus_PBS_single,RandomForest,0.4,8,16,0.855,88,83,17,12,"[""{'bootstrap': True, 'max"", ""depth': None, 'min"", 'samples', ""leaf': 1, 'min"", 'samples', ""split': 2, 'n"", ""estimators': 200}""]",countplus,PBS,single,TP
+Move Attribute,countplus_PBS_single,SVM,0.2,5,10,0.818,64,100,0,36,"[""{'C': 100, 'gamma': 'scale', 'kernel': 'sigmoid'}""]",countplus,PBS,single,Accuracy
+Move Attribute,countplus_PBS_single,RandomForest,0.2,5,10,0.701,90,50,50,10,"[""{'bootstrap': False, 'max"", ""depth': None, 'min"", 'samples', ""leaf': 2, 'min"", 'samples', ""split': 10, 'n"", ""estimators': 50}""]",countplus,PBS,single,TN
+Move Attribute,countplus_PBS_single,SVM,0.2,5,10,0.818,64,100,0,36,"[""{'C': 100, 'gamma': 'scale', 'kernel': 'sigmoid'}""]",countplus,PBS,single,TP
+Move Class,countplus_PBS_single,RandomForest,0.2,14,28,0.827,90,75,25,10,"[""{'bootstrap': True, 'max"", ""depth': None, 'min"", 'samples', ""leaf': 1, 'min"", 'samples', ""split': 2, 'n"", ""estimators': 50}""]",countplus,PBS,single,Accuracy
+Move Class,countplus_PBS_single,RandomForest,0.5,9,18,0.579,94,22,78,6,"[""{'bootstrap': True, 'max"", ""depth': None, 'min"", 'samples', ""leaf': 1, 'min"", 'samples', ""split': 2, 'n"", ""estimators': 50}""]",countplus,PBS,single,TN
+Move Class,countplus_PBS_single,RandomForest,0.2,14,28,0.827,90,75,25,10,"[""{'bootstrap': True, 'max"", ""depth': None, 'min"", 'samples', ""leaf': 1, 'min"", 'samples', ""split': 2, 'n"", ""estimators': 50}""]",countplus,PBS,single,TP
+Extract Method,countplus_SMOTE_all,RandomForest,0.2,85,85,0.709,60,82,18,40,"[""{'max"", ""depth': 10, 'min"", 'samples', ""leaf': 2, 'min"", 'samples', ""split': 10, 'n"", ""estimators': 200}""]",countplus,SMOTE,all,Accuracy
+Extract Method,countplus_SMOTE_all,SVM,0.4,64,64,0.578,67,49,51,33,"[""{'C': 0.1, 'kernel': 'linear'}""]",countplus,SMOTE,all,TN
+Extract Method,countplus_SMOTE_all,SVM,0.3,75,75,0.674,35,100,0,65,"[""{'C': 10, 'kernel': 'rbf'}""]",countplus,SMOTE,all,TP
+Extract Superclass,countplus_SMOTE_all,SVM,0.2,139,139,0.65,80,50,50,20,"[""{'C': 10, 'kernel': 'rbf'}""]",countplus,SMOTE,all,Accuracy
+Extract Superclass,countplus_SMOTE_all,RandomForest,0.2,139,139,0.457,91,0,100,9,"[""{'max"", ""depth': None, 'min"", 'samples', ""leaf': 1, 'min"", 'samples', ""split': 2, 'n"", ""estimators': 200}""]",countplus,SMOTE,all,TN
+Extract Superclass,countplus_SMOTE_all,SVM,0.2,139,139,0.65,80,50,50,20,"[""{'C': 10, 'kernel': 'rbf'}""]",countplus,SMOTE,all,TP
+Inline Method,countplus_SMOTE_all,LogisticRegression,0.2,132,132,0.775,88,67,33,12,"[""{'C': 0.1, 'max"", ""iter': 100}""]",countplus,SMOTE,all,Accuracy
+Inline Method,countplus_SMOTE_all,RandomForest,0.4,99,99,0.713,93,50,50,7,"[""{'max"", ""depth': None, 'min"", 'samples', ""leaf': 1, 'min"", 'samples', ""split': 2, 'n"", ""estimators': 200}""]",countplus,SMOTE,all,TN
+Inline Method,countplus_SMOTE_all,SVM,0.2,132,132,0.76,85,67,33,15,"[""{'C': 0.1, 'kernel': 'linear'}""]",countplus,SMOTE,all,TP
+Move Attribute,countplus_SMOTE_all,RandomForest,0.4,102,102,0.69,78,60,40,22,"[""{'max"", ""depth': 10, 'min"", 'samples', ""leaf': 1, 'min"", 'samples', ""split': 10, 'n"", ""estimators': 100}""]",countplus,SMOTE,all,Accuracy
+Move Attribute,countplus_SMOTE_all,SVM,0.5,85,85,0.507,85,17,83,15,"[""{'C': 0.1, 'kernel': 'linear'}""]",countplus,SMOTE,all,TN
+Move Attribute,countplus_SMOTE_all,RandomForest,0.4,102,102,0.69,78,60,40,22,"[""{'max"", ""depth': 10, 'min"", 'samples', ""leaf': 1, 'min"", 'samples', ""split': 10, 'n"", ""estimators': 100}""]",countplus,SMOTE,all,TP
+Move Class,countplus_SMOTE_all,LogisticRegression,0.5,78,78,0.679,71,64,36,29,"[""{'C': 0.1, 'max"", ""iter': 100}""]",countplus,SMOTE,all,Accuracy
+Move Class,countplus_SMOTE_all,SVM,0.2,123,123,0.653,91,40,60,9,"[""{'C': 10, 'kernel': 'rbf'}""]",countplus,SMOTE,all,TN
+Move Class,countplus_SMOTE_all,SVM,0.5,78,78,0.646,65,64,36,35,"[""{'C': 0.1, 'kernel': 'linear'}""]",countplus,SMOTE,all,TP
+Move Method,countplus_SMOTE_all,RandomForest,0.2,137,137,0.693,89,50,50,11,"[""{'max"", ""depth': None, 'min"", 'samples', ""leaf': 1, 'min"", 'samples', ""split': 2, 'n"", ""estimators': 100}""]",countplus,SMOTE,all,Accuracy
+Move Method,countplus_SMOTE_all,SVM,0.4,103,103,0.464,93,0,100,7,"[""{'C': 10, 'kernel': 'rbf'}""]",countplus,SMOTE,all,TN
+Move Method,countplus_SMOTE_all,RandomForest,0.2,137,137,0.693,89,50,50,11,"[""{'max"", ""depth': None, 'min"", 'samples', ""leaf': 1, 'min"", 'samples', ""split': 2, 'n"", ""estimators': 100}""]",countplus,SMOTE,all,TP
+Pull Up Method,countplus_SMOTE_all,SVM,0.3,121,121,0.467,43,50,50,57,"[""{'C': 0.1, 'kernel': 'linear'}""]",countplus,SMOTE,all,Accuracy
+Pull Up Method,countplus_SMOTE_all,RandomForest,0.2,139,139,0.443,89,0,100,11,"[""{'max"", ""depth': None, 'min"", 'samples', ""leaf': 1, 'min"", 'samples', ""split': 5, 'n"", ""estimators': 100}""]",countplus,SMOTE,all,TN
+Pull Up Method,countplus_SMOTE_all,SVM,0.3,121,121,0.467,43,50,50,57,"[""{'C': 0.1, 'kernel': 'linear'}""]",countplus,SMOTE,all,TP
+Rename Package,countplus_SMOTE_all,RandomForest,0.2,139,139,1.0,100,100,0,0,"[""{'max"", ""depth': None, 'min"", 'samples', ""leaf': 1, 'min"", 'samples', ""split': 2, 'n"", ""estimators': 100}""]",countplus,SMOTE,all,Accuracy
+Rename Package,countplus_SMOTE_all,RandomForest,0.2,139,139,1.0,100,100,0,0,"[""{'max"", ""depth': None, 'min"", 'samples', ""leaf': 1, 'min"", 'samples', ""split': 2, 'n"", ""estimators': 100}""]",countplus,SMOTE,all,TN
+Rename Package,countplus_SMOTE_all,RandomForest,0.2,139,139,1.0,100,100,0,0,"[""{'max"", ""depth': None, 'min"", 'samples', ""leaf': 1, 'min"", 'samples', ""split': 2, 'n"", ""estimators': 100}""]",countplus,SMOTE,all,TP
+Extract Method,countplus_SMOTE_single,RandomForest,0.3,69,69,0.809,79,83,17,21,"[""{'max"", ""depth': None, 'min"", 'samples', ""leaf': 1, 'min"", 'samples', ""split': 2, 'n"", ""estimators': 200}""]",countplus,SMOTE,single,Accuracy
+Extract Method,countplus_SMOTE_single,RandomForest,0.3,69,69,0.809,79,83,17,21,"[""{'max"", ""depth': None, 'min"", 'samples', ""leaf': 1, 'min"", 'samples', ""split': 2, 'n"", ""estimators': 200}""]",countplus,SMOTE,single,TN
+Extract Method,countplus_SMOTE_single,SVM,0.3,69,69,0.623,32,93,7,68,"[""{'C': 0.1, 'kernel': 'linear'}""]",countplus,SMOTE,single,TP
+Inline Method,countplus_SMOTE_single,RandomForest,0.5,73,73,0.795,88,71,29,12,"[""{'max"", ""depth': None, 'min"", 'samples', ""leaf': 1, 'min"", 'samples', ""split': 2, 'n"", ""estimators': 200}""]",countplus,SMOTE,single,Accuracy
+Inline Method,countplus_SMOTE_single,RandomForest,0.4,88,88,0.724,95,50,50,5,"[""{'max"", ""depth': None, 'min"", 'samples', ""leaf': 2, 'min"", 'samples', ""split': 5, 'n"", ""estimators': 100}""]",countplus,SMOTE,single,TN
+Inline Method,countplus_SMOTE_single,RandomForest,0.5,73,73,0.795,88,71,29,12,"[""{'max"", ""depth': None, 'min"", 'samples', ""leaf': 1, 'min"", 'samples', ""split': 2, 'n"", ""estimators': 200}""]",countplus,SMOTE,single,TP
+Move Attribute,countplus_SMOTE_single,RandomForest,0.2,122,122,0.468,94,0,100,6,"[""{'max"", ""depth': 10, 'min"", 'samples', ""leaf': 1, 'min"", 'samples', ""split': 2, 'n"", ""estimators': 100}""]",countplus,SMOTE,single,Accuracy
+Move Attribute,countplus_SMOTE_single,RandomForest,0.2,122,122,0.468,94,0,100,6,"[""{'max"", ""depth': 10, 'min"", 'samples', ""leaf': 1, 'min"", 'samples', ""split': 2, 'n"", ""estimators': 100}""]",countplus,SMOTE,single,TN
+Move Attribute,countplus_SMOTE_single,RandomForest,0.2,122,122,0.468,94,0,100,6,"[""{'max"", ""depth': 10, 'min"", 'samples', ""leaf': 1, 'min"", 'samples', ""split': 2, 'n"", ""estimators': 100}""]",countplus,SMOTE,single,TP
+Move Class,countplus_SMOTE_single,SVM,0.2,114,114,0.804,86,75,25,14,"[""{'C': 1, 'kernel': 'linear'}""]",countplus,SMOTE,single,Accuracy
+Move Class,countplus_SMOTE_single,SVM,0.4,85,85,0.733,89,57,43,11,"[""{'C': 0.1, 'kernel': 'linear'}""]",countplus,SMOTE,single,TN
+Move Class,countplus_SMOTE_single,SVM,0.2,114,114,0.804,86,75,25,14,"[""{'C': 1, 'kernel': 'linear'}""]",countplus,SMOTE,single,TP
+Extract Method,countplus_normal_all,RandomForest,0.2,85,60,0.744,53,95,5,47,"[""{'max"", ""depth': 10, 'min"", 'samples', ""leaf': 1, 'min"", 'samples', ""split': 5, 'n"", ""estimators': 100}""]",countplus,normal,all,Accuracy
+Extract Method,countplus_normal_all,RandomForest,0.2,85,60,0.744,53,95,5,47,"[""{'max"", ""depth': 10, 'min"", 'samples', ""leaf': 1, 'min"", 'samples', ""split': 5, 'n"", ""estimators': 100}""]",countplus,normal,all,TN
+Extract Method,countplus_normal_all,SVM,0.4,64,45,0.5,0,100,0,100,"[""{'C': 0.1, 'kernel': 'rbf'}""]",countplus,normal,all,TP
+Extract Superclass,countplus_normal_all,RandomForest,0.2,6,139,0.5,100,0,100,0,"[""{'max"", ""depth': None, 'min"", 'samples', ""leaf': 1, 'min"", 'samples', ""split': 2, 'n"", ""estimators': 100}""]",countplus,normal,all,Accuracy
+Extract Superclass,countplus_normal_all,RandomForest,0.2,6,139,0.5,100,0,100,0,"[""{'max"", ""depth': None, 'min"", 'samples', ""leaf': 1, 'min"", 'samples', ""split': 2, 'n"", ""estimators': 100}""]",countplus,normal,all,TN
+Extract Superclass,countplus_normal_all,RandomForest,0.2,6,139,0.5,100,0,100,0,"[""{'max"", ""depth': None, 'min"", 'samples', ""leaf': 1, 'min"", 'samples', ""split': 2, 'n"", ""estimators': 100}""]",countplus,normal,all,TP
+Inline Method,countplus_normal_all,LogisticRegression,0.2,13,132,0.652,97,33,67,3,"[""{'C': 0.1, 'max"", ""iter': 100}""]",countplus,normal,all,Accuracy
+Inline Method,countplus_normal_all,RandomForest,0.2,13,132,0.5,100,0,100,0,"[""{'max"", ""depth': None, 'min"", 'samples', ""leaf': 2, 'min"", 'samples', ""split': 10, 'n"", ""estimators': 100}""]",countplus,normal,all,TN
+Inline Method,countplus_normal_all,LogisticRegression,0.2,13,132,0.652,97,33,67,3,"[""{'C': 0.1, 'max"", ""iter': 100}""]",countplus,normal,all,TP
+Move Attribute,countplus_normal_all,LogisticRegression,0.3,8,119,0.615,98,25,75,2,"[""{'C': 0.1, 'max"", ""iter': 100}""]",countplus,normal,all,Accuracy
+Move Attribute,countplus_normal_all,RandomForest,0.2,10,135,0.5,100,0,100,0,"[""{'max"", ""depth': None, 'min"", 'samples', ""leaf': 2, 'min"", 'samples', ""split': 2, 'n"", ""estimators': 100}""]",countplus,normal,all,TN
+Move Attribute,countplus_normal_all,LogisticRegression,0.3,8,119,0.615,98,25,75,2,"[""{'C': 0.1, 'max"", ""iter': 100}""]",countplus,normal,all,TP
+Move Class,countplus_normal_all,LogisticRegression,0.5,13,78,0.63,97,29,71,3,"[""{'C': 0.1, 'max"", ""iter': 100}""]",countplus,normal,all,Accuracy
+Move Class,countplus_normal_all,RandomForest,0.4,16,93,0.5,100,0,100,0,"[""{'max"", ""depth': None, 'min"", 'samples', ""leaf': 4, 'min"", 'samples', ""split': 2, 'n"", ""estimators': 100}""]",countplus,normal,all,TN
+Move Class,countplus_normal_all,LogisticRegression,0.5,13,78,0.63,97,29,71,3,"[""{'C': 0.1, 'max"", ""iter': 100}""]",countplus,normal,all,TP
+Move Method,countplus_normal_all,RandomForest,0.3,7,120,0.638,94,33,67,6,"[""{'max"", ""depth': None, 'min"", 'samples', ""leaf': 1, 'min"", 'samples', ""split': 2, 'n"", ""estimators': 100}""]",countplus,normal,all,Accuracy
+Move Method,countplus_normal_all,RandomForest,0.2,8,137,0.5,100,0,100,0,"[""{'max"", ""depth': None, 'min"", 'samples', ""leaf': 4, 'min"", 'samples', ""split': 2, 'n"", ""estimators': 100}""]",countplus,normal,all,TN
+Move Method,countplus_normal_all,RandomForest,0.3,7,120,0.638,94,33,67,6,"[""{'max"", ""depth': None, 'min"", 'samples', ""leaf': 1, 'min"", 'samples', ""split': 2, 'n"", ""estimators': 100}""]",countplus,normal,all,TP
+Pull Up Method,countplus_normal_all,RandomForest,0.2,6,139,0.5,100,0,100,0,"[""{'max"", ""depth': None, 'min"", 'samples', ""leaf': 1, 'min"", 'samples', ""split': 10, 'n"", ""estimators': 100}""]",countplus,normal,all,Accuracy
+Pull Up Method,countplus_normal_all,RandomForest,0.2,6,139,0.5,100,0,100,0,"[""{'max"", ""depth': None, 'min"", 'samples', ""leaf': 1, 'min"", 'samples', ""split': 10, 'n"", ""estimators': 100}""]",countplus,normal,all,TN
+Pull Up Method,countplus_normal_all,RandomForest,0.2,6,139,0.5,100,0,100,0,"[""{'max"", ""depth': None, 'min"", 'samples', ""leaf': 1, 'min"", 'samples', ""split': 10, 'n"", ""estimators': 100}""]",countplus,normal,all,TP
+Rename Package,countplus_normal_all,RandomForest,0.2,6,139,1.0,100,100,0,0,"[""{'max"", ""depth': None, 'min"", 'samples', ""leaf': 1, 'min"", 'samples', ""split': 2, 'n"", ""estimators': 100}""]",countplus,normal,all,Accuracy
+Rename Package,countplus_normal_all,RandomForest,0.2,6,139,1.0,100,100,0,0,"[""{'max"", ""depth': None, 'min"", 'samples', ""leaf': 1, 'min"", 'samples', ""split': 2, 'n"", ""estimators': 100}""]",countplus,normal,all,TN
+Rename Package,countplus_normal_all,RandomForest,0.2,6,139,1.0,100,100,0,0,"[""{'max"", ""depth': None, 'min"", 'samples', ""leaf': 1, 'min"", 'samples', ""split': 2, 'n"", ""estimators': 100}""]",countplus,normal,all,TP
+Extract Method,countplus_normal_single,RandomForest,0.2,78,50,0.808,67,95,5,33,"[""{'bootstrap': True, 'max"", ""depth': None, 'min"", 'samples', ""leaf': 4, 'min"", 'samples', ""split': 10, 'n"", ""estimators': 200}""]",countplus,normal,single,Accuracy
+Extract Method,countplus_normal_single,SVM,0.3,69,43,0.721,68,76,24,32,"[""{'C': 0.1, 'gamma': 'auto', 'kernel': 'poly'}""]",countplus,normal,single,TN
+Extract Method,countplus_normal_single,RandomForest,0.2,78,50,0.808,67,95,5,33,"[""{'bootstrap': True, 'max"", ""depth': None, 'min"", 'samples', ""leaf': 4, 'min"", 'samples', ""split': 10, 'n"", ""estimators': 200}""]",countplus,normal,single,TP
+Inline Method,countplus_normal_single,SVM,0.5,7,73,0.887,92,86,14,8,"[""{'C': 0.1, 'gamma': 'auto', 'kernel': 'poly'}""]",countplus,normal,single,Accuracy
+Inline Method,countplus_normal_single,RandomForest,0.2,11,117,0.5,100,0,100,0,"[""{'bootstrap': True, 'max"", ""depth': None, 'min"", 'samples', ""leaf': 1, 'min"", 'samples', ""split': 2, 'n"", ""estimators': 50}""]",countplus,normal,single,TN
+Inline Method,countplus_normal_single,SVM,0.5,7,73,0.887,92,86,14,8,"[""{'C': 0.1, 'gamma': 'auto', 'kernel': 'poly'}""]",countplus,normal,single,TP
+Move Attribute,countplus_normal_single,SVM,0.4,4,92,0.617,90,33,67,10,"[""{'C': 0.1, 'gamma': 'auto', 'kernel': 'poly'}""]",countplus,normal,single,Accuracy
+Move Attribute,countplus_normal_single,RandomForest,0.2,6,122,0.5,100,0,100,0,"[""{'bootstrap': True, 'max"", ""depth': None, 'min"", 'samples', ""leaf': 1, 'min"", 'samples', ""split': 2, 'n"", ""estimators': 50}""]",countplus,normal,single,TN
+Move Attribute,countplus_normal_single,SVM,0.4,4,92,0.617,90,33,67,10,"[""{'C': 0.1, 'gamma': 'auto', 'kernel': 'poly'}""]",countplus,normal,single,TP
+Move Class,countplus_normal_single,LogisticRegression,0.2,14,114,0.607,96,25,75,4,"[""{'C': 0.01, 'max"", ""iter': 100, 'penalty': 'l2', 'solver': 'lbfgs'}""]",countplus,normal,single,Accuracy
+Move Class,countplus_normal_single,SVM,0.2,14,114,0.5,100,0,100,0,"[""{'C': 100, 'gamma': 'scale', 'kernel': 'rbf'}""]",countplus,normal,single,TN
+Move Class,countplus_normal_single,SVM,0.3,13,99,0.572,74,40,60,26,"[""{'C': 0.1, 'gamma': 'auto', 'kernel': 'poly'}""]",countplus,normal,single,TP
+Extract Method,ngram_PBS_all,RandomForest,0.4,64,37,0.619,45,79,21,55,"[""{'bootstrap': False, 'max"", ""depth': None, 'min"", 'samples', ""leaf': 4, 'min"", 'samples', ""split': 2, 'n"", ""estimators': 200}""]",ngram,PBS,all,Accuracy
+Extract Method,ngram_PBS_all,RandomForest,0.4,64,37,0.619,45,79,21,55,"[""{'bootstrap': False, 'max"", ""depth': None, 'min"", 'samples', ""leaf': 4, 'min"", 'samples', ""split': 2, 'n"", ""estimators': 200}""]",ngram,PBS,all,TN
+Extract Method,ngram_PBS_all,SVM,0.2,85,37,0.547,18,91,9,82,"[""{'C': 100, 'gamma': 'scale', 'kernel': 'linear'}""]",ngram,PBS,all,TP
+Extract Superclass,ngram_PBS_all,LogisticRegression,0.3,5,10,0.687,71,67,33,29,"[""{'C': 100, 'max"", ""iter': 100, 'penalty': 'l2', 'solver': 'lbfgs'}""]",ngram,PBS,all,Accuracy
+Extract Superclass,ngram_PBS_all,LogisticRegression,0.4,4,8,0.5,100,0,100,0,"[""{'C': 0.01, 'max"", ""iter': 100, 'penalty': 'l2', 'solver': 'lbfgs'}""]",ngram,PBS,all,TN
+Extract Superclass,ngram_PBS_all,SVM,0.3,5,10,0.644,62,67,33,38,"[""{'C': 10, 'gamma': 'scale', 'kernel': 'poly'}""]",ngram,PBS,all,TP
+Inline Method,ngram_PBS_all,SVM,0.4,9,18,0.878,76,100,0,24,"[""{'C': 1, 'gamma': 'scale', 'kernel': 'poly'}""]",ngram,PBS,all,Accuracy
+Inline Method,ngram_PBS_all,SVM,0.3,11,22,0.724,85,60,40,15,"[""{'C': 1, 'gamma': 'scale', 'kernel': 'poly'}""]",ngram,PBS,all,TN
+Inline Method,ngram_PBS_all,SVM,0.4,9,18,0.878,76,100,0,24,"[""{'C': 1, 'gamma': 'scale', 'kernel': 'poly'}""]",ngram,PBS,all,TP
+Move Attribute,ngram_PBS_all,RandomForest,0.4,7,14,0.643,69,60,40,31,"[""{'bootstrap': False, 'max"", ""depth': None, 'min"", 'samples', ""leaf': 4, 'min"", 'samples', ""split': 2, 'n"", ""estimators': 50}""]",ngram,PBS,all,Accuracy
+Move Attribute,ngram_PBS_all,LogisticRegression,0.2,9,18,0.5,100,0,100,0,"[""{'C': 0.01, 'max"", ""iter': 100, 'penalty': 'l2', 'solver': 'lbfgs'}""]",ngram,PBS,all,TN
+Move Attribute,ngram_PBS_all,RandomForest,0.4,7,14,0.643,69,60,40,31,"[""{'bootstrap': False, 'max"", ""depth': None, 'min"", 'samples', ""leaf': 4, 'min"", 'samples', ""split': 2, 'n"", ""estimators': 50}""]",ngram,PBS,all,TP
+Move Class,ngram_PBS_all,LogisticRegression,0.2,21,42,0.868,90,83,17,10,"[""{'C': 100, 'max"", ""iter': 100, 'penalty': 'l2', 'solver': 'lbfgs'}""]",ngram,PBS,all,Accuracy
+Move Class,ngram_PBS_all,SVM,0.4,16,32,0.744,94,55,45,6,"[""{'C': 100, 'gamma': 'scale', 'kernel': 'linear'}""]",ngram,PBS,all,TN
+Move Class,ngram_PBS_all,LogisticRegression,0.2,21,42,0.868,90,83,17,10,"[""{'C': 100, 'max"", ""iter': 100, 'penalty': 'l2', 'solver': 'lbfgs'}""]",ngram,PBS,all,TP
+Move Method,ngram_PBS_all,RandomForest,0.3,7,14,0.808,95,67,33,5,"[""{'bootstrap': True, 'max"", ""depth': None, 'min"", 'samples', ""leaf': 1, 'min"", 'samples', ""split': 10, 'n"", ""estimators': 50}""]",ngram,PBS,all,Accuracy
+Move Method,ngram_PBS_all,LogisticRegression,0.2,8,16,0.5,100,0,100,0,"[""{'C': 0.01, 'max"", ""iter': 100, 'penalty': 'l2', 'solver': 'lbfgs'}""]",ngram,PBS,all,TN
+Move Method,ngram_PBS_all,RandomForest,0.3,7,14,0.808,95,67,33,5,"[""{'bootstrap': True, 'max"", ""depth': None, 'min"", 'samples', ""leaf': 1, 'min"", 'samples', ""split': 10, 'n"", ""estimators': 50}""]",ngram,PBS,all,TP
+Pull Up Method,ngram_PBS_all,SVM,0.2,6,12,0.5,100,0,100,0,"[""{'C': 0.1, 'gamma': 'scale', 'kernel': 'linear'}""]",ngram,PBS,all,Accuracy
+Pull Up Method,ngram_PBS_all,SVM,0.2,6,12,0.5,100,0,100,0,"[""{'C': 0.1, 'gamma': 'scale', 'kernel': 'linear'}""]",ngram,PBS,all,TN
+Pull Up Method,ngram_PBS_all,RandomForest,0.2,6,12,0.355,71,0,100,29,"[""{'bootstrap': False, 'max"", ""depth': None, 'min"", 'samples', ""leaf': 2, 'min"", 'samples', ""split': 5, 'n"", ""estimators': 50}""]",ngram,PBS,all,TP
+Rename Package,ngram_PBS_all,SVM,0.3,4,8,0.973,95,100,0,5,"[""{'C': 10, 'gamma': 'scale', 'kernel': 'linear'}""]",ngram,PBS,all,Accuracy
+Rename Package,ngram_PBS_all,RandomForest,0.5,3,6,0.5,100,0,100,0,"[""{'bootstrap': True, 'max"", ""depth': None, 'min"", 'samples', ""leaf': 1, 'min"", 'samples', ""split': 10, 'n"", ""estimators': 50}""]",ngram,PBS,all,TN
+Rename Package,ngram_PBS_all,RandomForest,0.2,5,10,0.936,87,100,0,13,"[""{'bootstrap': True, 'max"", ""depth': None, 'min"", 'samples', ""leaf': 4, 'min"", 'samples', ""split': 2, 'n"", ""estimators': 50}""]",ngram,PBS,all,TP
+Extract Method,ngram_PBS_single,LogisticRegression,0.5,49,31,0.719,58,86,14,42,"[""{'C': 100, 'max"", ""iter': 100, 'penalty': 'l2', 'solver': 'lbfgs'}""]",ngram,PBS,single,Accuracy
+Extract Method,ngram_PBS_single,RandomForest,0.5,49,31,0.658,58,73,27,42,"[""{'bootstrap': False, 'max"", ""depth': None, 'min"", 'samples', ""leaf': 2, 'min"", 'samples', ""split': 5, 'n"", ""estimators': 50}""]",ngram,PBS,single,TN
+Extract Method,ngram_PBS_single,SVM,0.3,68,31,0.628,29,97,3,71,"[""{'C': 1, 'gamma': 'scale', 'kernel': 'poly'}""]",ngram,PBS,single,TP
+Inline Method,ngram_PBS_single,RandomForest,0.3,9,18,0.918,84,100,0,16,"[""{'bootstrap': True, 'max"", ""depth': None, 'min"", 'samples', ""leaf': 1, 'min"", 'samples', ""split': 10, 'n"", ""estimators': 200}""]",ngram,PBS,single,Accuracy
+Inline Method,ngram_PBS_single,SVM,0.2,11,22,0.781,90,67,33,10,"[""{'C': 1, 'gamma': 'scale', 'kernel': 'poly'}""]",ngram,PBS,single,TN
+Inline Method,ngram_PBS_single,RandomForest,0.3,9,18,0.918,84,100,0,16,"[""{'bootstrap': True, 'max"", ""depth': None, 'min"", 'samples', ""leaf': 1, 'min"", 'samples', ""split': 10, 'n"", ""estimators': 200}""]",ngram,PBS,single,TP
+Move Attribute,ngram_PBS_single,LogisticRegression,0.2,5,10,0.5,100,0,100,0,"[""{'C': 0.01, 'max"", ""iter': 100, 'penalty': 'l2', 'solver': 'lbfgs'}""]",ngram,PBS,single,Accuracy
+Move Attribute,ngram_PBS_single,LogisticRegression,0.2,5,10,0.5,100,0,100,0,"[""{'C': 0.01, 'max"", ""iter': 100, 'penalty': 'l2', 'solver': 'lbfgs'}""]",ngram,PBS,single,TN
+Move Attribute,ngram_PBS_single,RandomForest,0.2,5,10,0.336,67,0,100,33,"[""{'bootstrap': True, 'max"", ""depth': None, 'min"", 'samples', ""leaf': 1, 'min"", 'samples', ""split': 2, 'n"", ""estimators': 50}""]",ngram,PBS,single,TP
+Move Class,ngram_PBS_single,SVM,0.2,14,28,0.836,92,75,25,8,"[""{'C': 10, 'gamma': 'scale', 'kernel': 'linear'}""]",ngram,PBS,single,Accuracy
+Move Class,ngram_PBS_single,SVM,0.2,14,28,0.836,92,75,25,8,"[""{'C': 10, 'gamma': 'scale', 'kernel': 'linear'}""]",ngram,PBS,single,TN
+Move Class,ngram_PBS_single,RandomForest,0.2,14,28,0.708,67,75,25,33,"[""{'bootstrap': False, 'max"", ""depth': None, 'min"", 'samples', ""leaf': 2, 'min"", 'samples', ""split': 10, 'n"", ""estimators': 50}""]",ngram,PBS,single,TP
+Extract Method,ngram_normal_all,LogisticRegression,0.2,85,60,0.767,53,100,0,47,"[""{'C': 100, 'max"", ""iter': 100, 'penalty': 'l2', 'solver': 'lbfgs'}""]",ngram,normal,all,Accuracy
+Extract Method,ngram_normal_all,RandomForest,0.2,85,60,0.742,67,82,18,33,"[""{'bootstrap': True, 'max"", ""depth': None, 'min"", 'samples', ""leaf': 4, 'min"", 'samples', ""split': 10, 'n"", ""estimators': 50}""]",ngram,normal,all,TN
+Extract Method,ngram_normal_all,SVM,0.2,85,60,0.667,33,100,0,67,"[""{'C': 10, 'gamma': 'scale', 'kernel': 'linear'}""]",ngram,normal,all,TP
+Extract Superclass,ngram_normal_all,RandomForest,0.2,6,139,0.5,100,0,100,0,"[""{'bootstrap': True, 'max"", ""depth': None, 'min"", 'samples', ""leaf': 1, 'min"", 'samples', ""split': 2, 'n"", ""estimators': 50}""]",ngram,normal,all,Accuracy
+Extract Superclass,ngram_normal_all,RandomForest,0.2,6,139,0.5,100,0,100,0,"[""{'bootstrap': True, 'max"", ""depth': None, 'min"", 'samples', ""leaf': 1, 'min"", 'samples', ""split': 2, 'n"", ""estimators': 50}""]",ngram,normal,all,TN
+Extract Superclass,ngram_normal_all,RandomForest,0.2,6,139,0.5,100,0,100,0,"[""{'bootstrap': True, 'max"", ""depth': None, 'min"", 'samples', ""leaf': 1, 'min"", 'samples', ""split': 2, 'n"", ""estimators': 50}""]",ngram,normal,all,TP
+Inline Method,ngram_normal_all,RandomForest,0.5,8,83,0.651,93,38,62,7,"[""{'bootstrap': False, 'max"", ""depth': None, 'min"", 'samples', ""leaf': 1, 'min"", 'samples', ""split': 10, 'n"", ""estimators': 200}""]",ngram,normal,all,Accuracy
+Inline Method,ngram_normal_all,RandomForest,0.2,13,132,0.5,100,0,100,0,"[""{'bootstrap': False, 'max"", ""depth': None, 'min"", 'samples', ""leaf': 2, 'min"", 'samples', ""split': 5, 'n"", ""estimators': 200}""]",ngram,normal,all,TN
+Inline Method,ngram_normal_all,RandomForest,0.5,8,83,0.651,93,38,62,7,"[""{'bootstrap': False, 'max"", ""depth': None, 'min"", 'samples', ""leaf': 1, 'min"", 'samples', ""split': 10, 'n"", ""estimators': 200}""]",ngram,normal,all,TP
+Move Attribute,ngram_normal_all,RandomForest,0.2,10,135,0.5,100,0,100,0,"[""{'bootstrap': True, 'max"", ""depth': None, 'min"", 'samples', ""leaf': 1, 'min"", 'samples', ""split': 2, 'n"", ""estimators': 100}""]",ngram,normal,all,Accuracy
+Move Attribute,ngram_normal_all,RandomForest,0.2,10,135,0.5,100,0,100,0,"[""{'bootstrap': True, 'max"", ""depth': None, 'min"", 'samples', ""leaf': 1, 'min"", 'samples', ""split': 2, 'n"", ""estimators': 100}""]",ngram,normal,all,TN
+Move Attribute,ngram_normal_all,RandomForest,0.2,10,135,0.5,100,0,100,0,"[""{'bootstrap': True, 'max"", ""depth': None, 'min"", 'samples', ""leaf': 1, 'min"", 'samples', ""split': 2, 'n"", ""estimators': 100}""]",ngram,normal,all,TP
+Move Class,ngram_normal_all,RandomForest,0.2,22,123,0.669,94,40,60,6,"[""{'bootstrap': False, 'max"", ""depth': None, 'min"", 'samples', ""leaf': 2, 'min"", 'samples', ""split': 10, 'n"", ""estimators': 100}""]",ngram,normal,all,Accuracy
+Move Class,ngram_normal_all,LogisticRegression,0.3,19,108,0.489,98,0,100,2,"[""{'C': 100, 'max"", ""iter': 100, 'penalty': 'l2', 'solver': 'lbfgs'}""]",ngram,normal,all,TN
+Move Class,ngram_normal_all,RandomForest,0.2,22,123,0.669,94,40,60,6,"[""{'bootstrap': False, 'max"", ""depth': None, 'min"", 'samples', ""leaf': 2, 'min"", 'samples', ""split': 10, 'n"", ""estimators': 100}""]",ngram,normal,all,TP
+Move Method,ngram_normal_all,RandomForest,0.2,8,137,0.5,100,0,100,0,"[""{'bootstrap': True, 'max"", ""depth': None, 'min"", 'samples', ""leaf': 1, 'min"", 'samples', ""split': 10, 'n"", ""estimators': 100}""]",ngram,normal,all,Accuracy
+Move Method,ngram_normal_all,RandomForest,0.2,8,137,0.5,100,0,100,0,"[""{'bootstrap': True, 'max"", ""depth': None, 'min"", 'samples', ""leaf': 1, 'min"", 'samples', ""split': 10, 'n"", ""estimators': 100}""]",ngram,normal,all,TN
+Move Method,ngram_normal_all,RandomForest,0.2,8,137,0.5,100,0,100,0,"[""{'bootstrap': True, 'max"", ""depth': None, 'min"", 'samples', ""leaf': 1, 'min"", 'samples', ""split': 10, 'n"", ""estimators': 100}""]",ngram,normal,all,TP
+Pull Up Method,ngram_normal_all,RandomForest,0.2,6,139,0.5,100,0,100,0,"[""{'bootstrap': True, 'max"", ""depth': None, 'min"", 'samples', ""leaf': 1, 'min"", 'samples', ""split': 2, 'n"", ""estimators': 50}""]",ngram,normal,all,Accuracy
+Pull Up Method,ngram_normal_all,RandomForest,0.2,6,139,0.5,100,0,100,0,"[""{'bootstrap': True, 'max"", ""depth': None, 'min"", 'samples', ""leaf': 1, 'min"", 'samples', ""split': 2, 'n"", ""estimators': 50}""]",ngram,normal,all,TN
+Pull Up Method,ngram_normal_all,RandomForest,0.2,6,139,0.5,100,0,100,0,"[""{'bootstrap': True, 'max"", ""depth': None, 'min"", 'samples', ""leaf': 1, 'min"", 'samples', ""split': 2, 'n"", ""estimators': 50}""]",ngram,normal,all,TP
+Rename Package,ngram_normal_all,RandomForest,0.2,6,139,1.0,100,100,0,0,"[""{'bootstrap': True, 'max"", ""depth': None, 'min"", 'samples', ""leaf': 1, 'min"", 'samples', ""split': 2, 'n"", ""estimators': 300}""]",ngram,normal,all,Accuracy
+Rename Package,ngram_normal_all,RandomForest,0.2,6,139,1.0,100,100,0,0,"[""{'bootstrap': True, 'max"", ""depth': None, 'min"", 'samples', ""leaf': 1, 'min"", 'samples', ""split': 2, 'n"", ""estimators': 300}""]",ngram,normal,all,TN
+Rename Package,ngram_normal_all,RandomForest,0.2,6,139,1.0,100,100,0,0,"[""{'bootstrap': True, 'max"", ""depth': None, 'min"", 'samples', ""leaf': 1, 'min"", 'samples', ""split': 2, 'n"", ""estimators': 300}""]",ngram,normal,all,TP
+Extract Method,ngram_normal_single,LogisticRegression,0.3,69,43,0.851,74,97,3,26,"[""{'C': 100, 'max"", ""iter': 100, 'penalty': 'l2', 'solver': 'lbfgs'}""]",ngram,normal,single,Accuracy
+Extract Method,ngram_normal_single,RandomForest,0.3,69,43,0.782,74,83,17,26,"[""{'bootstrap': True, 'max"", ""depth': None, 'min"", 'samples', ""leaf': 1, 'min"", 'samples', ""split': 10, 'n"", ""estimators': 100}""]",ngram,normal,single,TN
+Extract Method,ngram_normal_single,LogisticRegression,0.5,49,31,0.748,52,98,2,48,"[""{'C': 100, 'max"", ""iter': 100, 'penalty': 'l2', 'solver': 'lbfgs'}""]",ngram,normal,single,TP
+Inline Method,ngram_normal_single,RandomForest,0.4,8,88,0.641,95,33,67,5,"[""{'bootstrap': True, 'max"", ""depth': None, 'min"", 'samples', ""leaf': 1, 'min"", 'samples', ""split': 2, 'n"", ""estimators': 50}""]",ngram,normal,single,Accuracy
+Inline Method,ngram_normal_single,LogisticRegression,0.2,11,117,0.5,100,0,100,0,"[""{'C': 100, 'max"", ""iter': 100, 'penalty': 'l2', 'solver': 'lbfgs'}""]",ngram,normal,single,TN
+Inline Method,ngram_normal_single,RandomForest,0.2,11,117,0.632,93,33,67,7,"[""{'bootstrap': False, 'max"", ""depth': None, 'min"", 'samples', ""leaf': 1, 'min"", 'samples', ""split': 2, 'n"", ""estimators': 100}""]",ngram,normal,single,TP
+Move Attribute,ngram_normal_single,RandomForest,0.2,6,122,0.5,100,0,100,0,"[""{'bootstrap': True, 'max"", ""depth': None, 'min"", 'samples', ""leaf': 2, 'min"", 'samples', ""split': 2, 'n"", ""estimators': 50}""]",ngram,normal,single,Accuracy
+Move Attribute,ngram_normal_single,RandomForest,0.2,6,122,0.5,100,0,100,0,"[""{'bootstrap': True, 'max"", ""depth': None, 'min"", 'samples', ""leaf': 2, 'min"", 'samples', ""split': 2, 'n"", ""estimators': 50}""]",ngram,normal,single,TN
+Move Attribute,ngram_normal_single,RandomForest,0.2,6,122,0.5,100,0,100,0,"[""{'bootstrap': True, 'max"", ""depth': None, 'min"", 'samples', ""leaf': 2, 'min"", 'samples', ""split': 2, 'n"", ""estimators': 50}""]",ngram,normal,single,TP
+Move Class,ngram_normal_single,LogisticRegression,0.5,9,71,0.743,93,56,44,7,"[""{'C': 100, 'max"", ""iter': 100, 'penalty': 'l2', 'solver': 'lbfgs'}""]",ngram,normal,single,Accuracy
+Move Class,ngram_normal_single,SVM,0.4,11,85,0.563,98,14,86,2,"[""{'C': 100, 'gamma': 'scale', 'kernel': 'sigmoid'}""]",ngram,normal,single,TN
+Move Class,ngram_normal_single,SVM,0.3,13,99,0.742,88,60,40,12,"[""{'C': 100, 'gamma': 'scale', 'kernel': 'linear'}""]",ngram,normal,single,TP
+Extract Method,ratio_PBS_all,RandomForest,0.5,53,37,0.654,47,83,17,53,"[""{'bootstrap': True, 'max"", ""depth': None, 'min"", 'samples', ""leaf': 2, 'min"", 'samples', ""split': 5, 'n"", ""estimators': 200}""]",ratio,PBS,all,Accuracy
+Extract Method,ratio_PBS_all,RandomForest,0.5,53,37,0.654,47,83,17,53,"[""{'bootstrap': True, 'max"", ""depth': None, 'min"", 'samples', ""leaf': 2, 'min"", 'samples', ""split': 5, 'n"", ""estimators': 200}""]",ratio,PBS,all,TN
+Extract Method,ratio_PBS_all,LogisticRegression,0.2,85,37,0.563,26,86,14,74,"[""{'C': 100, 'max"", ""iter': 100, 'penalty': 'l2', 'solver': 'lbfgs'}""]",ratio,PBS,all,TP
+Extract Superclass,ratio_PBS_all,SVM,0.4,4,8,0.727,70,75,25,30,"[""{'C': 10, 'gamma': 'scale', 'kernel': 'poly'}""]",ratio,PBS,all,Accuracy
+Extract Superclass,ratio_PBS_all,LogisticRegression,0.4,4,8,0.5,100,0,100,0,"[""{'C': 0.01, 'max"", ""iter': 100, 'penalty': 'l2', 'solver': 'lbfgs'}""]",ratio,PBS,all,TN
+Extract Superclass,ratio_PBS_all,SVM,0.4,4,8,0.727,70,75,25,30,"[""{'C': 10, 'gamma': 'scale', 'kernel': 'poly'}""]",ratio,PBS,all,TP
+Inline Method,ratio_PBS_all,RandomForest,0.5,8,16,0.739,85,62,38,15,"[""{'bootstrap': True, 'max"", ""depth': None, 'min"", 'samples', ""leaf': 1, 'min"", 'samples', ""split': 10, 'n"", ""estimators': 200}""]",ratio,PBS,all,Accuracy
+Inline Method,ratio_PBS_all,RandomForest,0.2,12,24,0.562,87,25,75,13,"[""{'bootstrap': True, 'max"", ""depth': None, 'min"", 'samples', ""leaf': 1, 'min"", 'samples', ""split': 5, 'n"", ""estimators': 300}""]",ratio,PBS,all,TN
+Inline Method,ratio_PBS_all,RandomForest,0.5,8,16,0.739,85,62,38,15,"[""{'bootstrap': True, 'max"", ""depth': None, 'min"", 'samples', ""leaf': 1, 'min"", 'samples', ""split': 10, 'n"", ""estimators': 200}""]",ratio,PBS,all,TP
+Move Attribute,ratio_PBS_all,SVM,0.2,9,18,0.698,73,67,33,27,"[""{'C': 100, 'gamma': 'scale', 'kernel': 'poly'}""]",ratio,PBS,all,Accuracy
+Move Attribute,ratio_PBS_all,LogisticRegression,0.2,9,18,0.5,100,0,100,0,"[""{'C': 0.01, 'max"", ""iter': 100, 'penalty': 'l2', 'solver': 'lbfgs'}""]",ratio,PBS,all,TN
+Move Attribute,ratio_PBS_all,RandomForest,0.2,9,18,0.685,70,67,33,30,"[""{'bootstrap': False, 'max"", ""depth': None, 'min"", 'samples', ""leaf': 1, 'min"", 'samples', ""split': 2, 'n"", ""estimators': 50}""]",ratio,PBS,all,TP
+Move Class,ratio_PBS_all,LogisticRegression,0.2,21,42,0.798,93,67,33,7,"[""{'C': 100, 'max"", ""iter': 100, 'penalty': 'l2', 'solver': 'lbfgs'}""]",ratio,PBS,all,Accuracy
+Move Class,ratio_PBS_all,LogisticRegression,0.3,18,36,0.748,94,56,44,6,"[""{'C': 100, 'max"", ""iter': 100, 'penalty': 'l2', 'solver': 'lbfgs'}""]",ratio,PBS,all,TN
+Move Class,ratio_PBS_all,SVM,0.5,13,26,0.774,69,86,14,31,"[""{'C': 100, 'gamma': 'scale', 'kernel': 'poly'}""]",ratio,PBS,all,TP
+Move Method,ratio_PBS_all,RandomForest,0.2,8,16,0.715,93,50,50,7,"[""{'bootstrap': True, 'max"", ""depth': None, 'min"", 'samples', ""leaf': 1, 'min"", 'samples', ""split': 5, 'n"", ""estimators': 100}""]",ratio,PBS,all,Accuracy
+Move Method,ratio_PBS_all,SVM,0.3,7,14,0.5,100,0,100,0,"[""{'C': 0.1, 'gamma': 'scale', 'kernel': 'linear'}""]",ratio,PBS,all,TN
+Move Method,ratio_PBS_all,RandomForest,0.2,8,16,0.715,93,50,50,7,"[""{'bootstrap': True, 'max"", ""depth': None, 'min"", 'samples', ""leaf': 1, 'min"", 'samples', ""split': 5, 'n"", ""estimators': 100}""]",ratio,PBS,all,TP
+Pull Up Method,ratio_PBS_all,SVM,0.3,5,10,0.5,100,0,100,0,"[""{'C': 0.1, 'gamma': 'scale', 'kernel': 'linear'}""]",ratio,PBS,all,Accuracy
+Pull Up Method,ratio_PBS_all,SVM,0.3,5,10,0.5,100,0,100,0,"[""{'C': 0.1, 'gamma': 'scale', 'kernel': 'linear'}""]",ratio,PBS,all,TN
+Pull Up Method,ratio_PBS_all,RandomForest,0.2,6,12,0.392,78,0,100,22,"[""{'bootstrap': True, 'max"", ""depth': None, 'min"", 'samples', ""leaf': 2, 'min"", 'samples', ""split': 2, 'n"", ""estimators': 100}""]",ratio,PBS,all,TP
+Rename Package,ratio_PBS_all,LogisticRegression,0.3,4,8,0.967,93,100,0,7,"[""{'C': 100, 'max"", ""iter': 100, 'penalty': 'l2', 'solver': 'lbfgs'}""]",ratio,PBS,all,Accuracy
+Rename Package,ratio_PBS_all,LogisticRegression,0.5,3,6,0.5,100,0,100,0,"[""{'C': 0.01, 'max"", ""iter': 100, 'penalty': 'l2', 'solver': 'lbfgs'}""]",ratio,PBS,all,TN
+Rename Package,ratio_PBS_all,RandomForest,0.2,5,10,0.933,87,100,0,13,"[""{'bootstrap': False, 'max"", ""depth': None, 'min"", 'samples', ""leaf': 1, 'min"", 'samples', ""split': 5, 'n"", ""estimators': 50}""]",ratio,PBS,all,TP
+Extract Method,ratio_PBS_single,SVM,0.3,68,31,0.674,55,80,20,45,"[""{'C': 10, 'gamma': 'scale', 'kernel': 'poly'}""]",ratio,PBS,single,Accuracy
+Extract Method,ratio_PBS_single,SVM,0.4,58,31,0.644,61,68,32,39,"[""{'C': 100, 'gamma': 'scale', 'kernel': 'poly'}""]",ratio,PBS,single,TN
+Extract Method,ratio_PBS_single,LogisticRegression,0.3,68,31,0.66,39,93,7,61,"[""{'C': 100, 'max"", ""iter': 100, 'penalty': 'l2', 'solver': 'lbfgs'}""]",ratio,PBS,single,TP
+Inline Method,ratio_PBS_single,LogisticRegression,0.4,8,16,0.803,94,67,33,6,"[""{'C': 100, 'max"", ""iter': 100, 'penalty': 'l2', 'solver': 'lbfgs'}""]",ratio,PBS,single,Accuracy
+Inline Method,ratio_PBS_single,SVM,0.5,7,14,0.759,95,57,43,5,"[""{'C': 0.1, 'gamma': 'scale', 'kernel': 'poly'}""]",ratio,PBS,single,TN
+Inline Method,ratio_PBS_single,SVM,0.4,8,16,0.768,87,67,33,13,"[""{'C': 10, 'gamma': 'scale', 'kernel': 'rbf'}""]",ratio,PBS,single,TP
+Move Attribute,ratio_PBS_single,LogisticRegression,0.2,5,10,0.586,67,50,50,33,"[""{'C': 100, 'max"", ""iter': 100, 'penalty': 'l2', 'solver': 'lbfgs'}""]",ratio,PBS,single,Accuracy
+Move Attribute,ratio_PBS_single,LogisticRegression,0.3,4,8,0.5,100,0,100,0,"[""{'C': 0.01, 'max"", ""iter': 100, 'penalty': 'l2', 'solver': 'lbfgs'}""]",ratio,PBS,single,TN
+Move Attribute,ratio_PBS_single,LogisticRegression,0.2,5,10,0.586,67,50,50,33,"[""{'C': 100, 'max"", ""iter': 100, 'penalty': 'l2', 'solver': 'lbfgs'}""]",ratio,PBS,single,TP
+Move Class,ratio_PBS_single,LogisticRegression,0.2,14,28,0.84,93,75,25,7,"[""{'C': 10, 'max"", ""iter': 100, 'penalty': 'l2', 'solver': 'lbfgs'}""]",ratio,PBS,single,Accuracy
+Move Class,ratio_PBS_single,LogisticRegression,0.2,14,28,0.84,93,75,25,7,"[""{'C': 10, 'max"", ""iter': 100, 'penalty': 'l2', 'solver': 'lbfgs'}""]",ratio,PBS,single,TN
+Move Class,ratio_PBS_single,RandomForest,0.2,14,28,0.757,76,75,25,24,"[""{'bootstrap': False, 'max"", ""depth': None, 'min"", 'samples', ""leaf': 4, 'min"", 'samples', ""split': 2, 'n"", ""estimators': 50}""]",ratio,PBS,single,TP
+Extract Method,ratio_normal_all,LogisticRegression,0.2,85,60,0.711,47,95,5,53,"[""{'C': 100, 'max"", ""iter': 100, 'penalty': 'l2', 'solver': 'lbfgs'}""]",ratio,normal,all,Accuracy
+Extract Method,ratio_normal_all,RandomForest,0.2,85,60,0.641,60,68,32,40,"[""{'bootstrap': False, 'max"", ""depth': 10, 'min"", 'samples', ""leaf': 1, 'min"", 'samples', ""split': 5, 'n"", ""estimators': 100}""]",ratio,normal,all,TN
+Extract Method,ratio_normal_all,LogisticRegression,0.2,85,60,0.711,47,95,5,53,"[""{'C': 100, 'max"", ""iter': 100, 'penalty': 'l2', 'solver': 'lbfgs'}""]",ratio,normal,all,TP
+Extract Superclass,ratio_normal_all,RandomForest,0.2,6,139,0.5,100,0,100,0,"[""{'bootstrap': True, 'max"", ""depth': None, 'min"", 'samples', ""leaf': 1, 'min"", 'samples', ""split': 2, 'n"", ""estimators': 300}""]",ratio,normal,all,Accuracy
+Extract Superclass,ratio_normal_all,RandomForest,0.2,6,139,0.5,100,0,100,0,"[""{'bootstrap': True, 'max"", ""depth': None, 'min"", 'samples', ""leaf': 1, 'min"", 'samples', ""split': 2, 'n"", ""estimators': 300}""]",ratio,normal,all,TN
+Extract Superclass,ratio_normal_all,RandomForest,0.2,6,139,0.5,100,0,100,0,"[""{'bootstrap': True, 'max"", ""depth': None, 'min"", 'samples', ""leaf': 1, 'min"", 'samples', ""split': 2, 'n"", ""estimators': 300}""]",ratio,normal,all,TP
+Inline Method,ratio_normal_all,SVM,0.2,13,132,0.652,97,33,67,3,"[""{'C': 100, 'gamma': 'scale', 'kernel': 'rbf'}""]",ratio,normal,all,Accuracy
+Inline Method,ratio_normal_all,LogisticRegression,0.2,13,132,0.5,100,0,100,0,"[""{'C': 100, 'max"", ""iter': 100, 'penalty': 'l2', 'solver': 'lbfgs'}""]",ratio,normal,all,TN
+Inline Method,ratio_normal_all,SVM,0.5,8,83,0.645,92,38,62,8,"[""{'C': 1, 'gamma': 'scale', 'kernel': 'poly'}""]",ratio,normal,all,TP
+Move Attribute,ratio_normal_all,RandomForest,0.2,10,135,0.5,100,0,100,0,"[""{'bootstrap': True, 'max"", ""depth': None, 'min"", 'samples', ""leaf': 1, 'min"", 'samples', ""split': 2, 'n"", ""estimators': 100}""]",ratio,normal,all,Accuracy
+Move Attribute,ratio_normal_all,RandomForest,0.2,10,135,0.5,100,0,100,0,"[""{'bootstrap': True, 'max"", ""depth': None, 'min"", 'samples', ""leaf': 1, 'min"", 'samples', ""split': 2, 'n"", ""estimators': 100}""]",ratio,normal,all,TN
+Move Attribute,ratio_normal_all,RandomForest,0.2,10,135,0.5,100,0,100,0,"[""{'bootstrap': True, 'max"", ""depth': None, 'min"", 'samples', ""leaf': 1, 'min"", 'samples', ""split': 2, 'n"", ""estimators': 100}""]",ratio,normal,all,TP
+Move Class,ratio_normal_all,SVM,0.5,13,78,0.685,87,50,50,13,"[""{'C': 100, 'gamma': 'scale', 'kernel': 'sigmoid'}""]",ratio,normal,all,Accuracy
+Move Class,ratio_normal_all,RandomForest,0.3,19,108,0.489,98,0,100,2,"[""{'bootstrap': True, 'max"", ""depth': None, 'min"", 'samples', ""leaf': 2, 'min"", 'samples', ""split': 10, 'n"", ""estimators': 50}""]",ratio,normal,all,TN
+Move Class,ratio_normal_all,SVM,0.5,13,78,0.685,87,50,50,13,"[""{'C': 100, 'gamma': 'scale', 'kernel': 'sigmoid'}""]",ratio,normal,all,TP
+Move Method,ratio_normal_all,RandomForest,0.2,8,137,0.5,100,0,100,0,"[""{'bootstrap': True, 'max"", ""depth': None, 'min"", 'samples', ""leaf': 1, 'min"", 'samples', ""split': 2, 'n"", ""estimators': 300}""]",ratio,normal,all,Accuracy
+Move Method,ratio_normal_all,RandomForest,0.2,8,137,0.5,100,0,100,0,"[""{'bootstrap': True, 'max"", ""depth': None, 'min"", 'samples', ""leaf': 1, 'min"", 'samples', ""split': 2, 'n"", ""estimators': 300}""]",ratio,normal,all,TN
+Move Method,ratio_normal_all,RandomForest,0.2,8,137,0.5,100,0,100,0,"[""{'bootstrap': True, 'max"", ""depth': None, 'min"", 'samples', ""leaf': 1, 'min"", 'samples', ""split': 2, 'n"", ""estimators': 300}""]",ratio,normal,all,TP
+Pull Up Method,ratio_normal_all,RandomForest,0.2,6,139,0.5,100,0,100,0,"[""{'bootstrap': True, 'max"", ""depth': None, 'min"", 'samples', ""leaf': 1, 'min"", 'samples', ""split': 2, 'n"", ""estimators': 50}""]",ratio,normal,all,Accuracy
+Pull Up Method,ratio_normal_all,RandomForest,0.2,6,139,0.5,100,0,100,0,"[""{'bootstrap': True, 'max"", ""depth': None, 'min"", 'samples', ""leaf': 1, 'min"", 'samples', ""split': 2, 'n"", ""estimators': 50}""]",ratio,normal,all,TN
+Pull Up Method,ratio_normal_all,RandomForest,0.2,6,139,0.5,100,0,100,0,"[""{'bootstrap': True, 'max"", ""depth': None, 'min"", 'samples', ""leaf': 1, 'min"", 'samples', ""split': 2, 'n"", ""estimators': 50}""]",ratio,normal,all,TP
+Rename Package,ratio_normal_all,RandomForest,0.2,6,139,1.0,100,100,0,0,"[""{'bootstrap': True, 'max"", ""depth': None, 'min"", 'samples', ""leaf': 1, 'min"", 'samples', ""split': 2, 'n"", ""estimators': 200}""]",ratio,normal,all,Accuracy
+Rename Package,ratio_normal_all,RandomForest,0.2,6,139,1.0,100,100,0,0,"[""{'bootstrap': True, 'max"", ""depth': None, 'min"", 'samples', ""leaf': 1, 'min"", 'samples', ""split': 2, 'n"", ""estimators': 200}""]",ratio,normal,all,TN
+Rename Package,ratio_normal_all,RandomForest,0.2,6,139,1.0,100,100,0,0,"[""{'bootstrap': True, 'max"", ""depth': None, 'min"", 'samples', ""leaf': 1, 'min"", 'samples', ""split': 2, 'n"", ""estimators': 200}""]",ratio,normal,all,TP
+Extract Method,ratio_normal_single,SVM,0.3,69,43,0.826,79,86,14,21,"[""{'C': 10, 'gamma': 'scale', 'kernel': 'poly'}""]",ratio,normal,single,Accuracy
+Extract Method,ratio_normal_single,SVM,0.3,69,43,0.826,79,86,14,21,"[""{'C': 10, 'gamma': 'scale', 'kernel': 'poly'}""]",ratio,normal,single,TN
+Extract Method,ratio_normal_single,LogisticRegression,0.4,59,37,0.674,40,95,5,60,"[""{'C': 10, 'max"", ""iter': 100, 'penalty': 'l2', 'solver': 'lbfgs'}""]",ratio,normal,single,TP
+Inline Method,ratio_normal_single,SVM,0.4,8,88,0.764,86,67,33,14,"[""{'C': 100, 'gamma': 'scale', 'kernel': 'poly'}""]",ratio,normal,single,Accuracy
+Inline Method,ratio_normal_single,LogisticRegression,0.2,11,117,0.5,100,0,100,0,"[""{'C': 100, 'max"", ""iter': 100, 'penalty': 'l2', 'solver': 'lbfgs'}""]",ratio,normal,single,TN
+Inline Method,ratio_normal_single,SVM,0.4,8,88,0.764,86,67,33,14,"[""{'C': 100, 'gamma': 'scale', 'kernel': 'poly'}""]",ratio,normal,single,TP
+Move Attribute,ratio_normal_single,RandomForest,0.2,6,122,0.5,100,0,100,0,"[""{'bootstrap': True, 'max"", ""depth': None, 'min"", 'samples', ""leaf': 1, 'min"", 'samples', ""split': 2, 'n"", ""estimators': 100}""]",ratio,normal,single,Accuracy
+Move Attribute,ratio_normal_single,RandomForest,0.2,6,122,0.5,100,0,100,0,"[""{'bootstrap': True, 'max"", ""depth': None, 'min"", 'samples', ""leaf': 1, 'min"", 'samples', ""split': 2, 'n"", ""estimators': 100}""]",ratio,normal,single,TN
+Move Attribute,ratio_normal_single,RandomForest,0.2,6,122,0.5,100,0,100,0,"[""{'bootstrap': True, 'max"", ""depth': None, 'min"", 'samples', ""leaf': 1, 'min"", 'samples', ""split': 2, 'n"", ""estimators': 100}""]",ratio,normal,single,TP
+Move Class,ratio_normal_single,LogisticRegression,0.5,9,71,0.743,93,56,44,7,"[""{'C': 100, 'max"", ""iter': 100, 'penalty': 'l2', 'solver': 'lbfgs'}""]",ratio,normal,single,Accuracy
+Move Class,ratio_normal_single,RandomForest,0.4,11,85,0.545,95,14,86,5,"[""{'bootstrap': True, 'max"", ""depth': None, 'min"", 'samples', ""leaf': 4, 'min"", 'samples', ""split': 2, 'n"", ""estimators': 50}""]",ratio,normal,single,TN
+Move Class,ratio_normal_single,LogisticRegression,0.5,9,71,0.743,93,56,44,7,"[""{'C': 100, 'max"", ""iter': 100, 'penalty': 'l2', 'solver': 'lbfgs'}""]",ratio,normal,single,TP
